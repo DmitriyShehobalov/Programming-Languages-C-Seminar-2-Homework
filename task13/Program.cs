@@ -10,7 +10,8 @@
 
 Console.Write("Enter number: ");
 int n = Convert.ToInt32(Console.ReadLine());
-if (n < 99) Console.Write("There is no third digit");
+Console.Write(n +" ");
+if (n < 99) Console.Write("there is no third digit");
 else
 {
     while (n > 999)
@@ -18,7 +19,7 @@ else
         n = n / 10;
        
     }
-    Console.Write(n%10);
+    Console.Write($"the third digit of the number -> {n%10}");
 }
 
 
